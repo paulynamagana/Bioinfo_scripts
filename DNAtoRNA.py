@@ -28,5 +28,5 @@ def DNAtoRNA(seq):
 
 if __name__ == "__main__":
 
-    y = input("DNA sequence: ")
+    y = input("Input DNA sequence: ")
     DNAtoRNA(y)
