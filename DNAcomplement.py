@@ -1,8 +1,9 @@
 # define a function for transcription
-def DNAtoRNA(seq):
+def DNAcomplement(seq):
     seq = seq.upper() #convert to uppercase
     # convert string into list
     l = list(seq)
+
 
     for i in range(len(seq)):
 
@@ -16,12 +17,12 @@ def DNAtoRNA(seq):
             l[i] = "G"
 
         elif (l[i] == "A"):
-            l[i] = "U"
+            l[i] = "T"
 
         else:
             print("Invalid")
 
-    print("Translated DNA; ", end="")
+    print("Complement DNA; ", end="")
     for char in l:
         print(char, end="")
 
@@ -29,4 +30,4 @@ def DNAtoRNA(seq):
 if __name__ == "__main__":
 
     y = input("Input DNA sequence: ")
-    DNAtoRNA(y)
+    DNAcomplement(y)
